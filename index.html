@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Previewer</title>
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="icon" type="image/png" href="https://www.svgrepo.com/show/216712/html.svg" />
+  <script src="https://kit.fontawesome.com/935b5672af.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" defer></script>-->
+</head>
+
+<body>
+
+    <div class="container-fluid">
+      <!-- Tabs -->
+      <ul class="nav nav-tabs d-flex d-md-none" role="tablist">
+          <li class="nav-item"><a class="nav-link active" href="#editor-pane" aria-controls="editor" data-bs-toggle="tab">Editor</a></li>
+          <li class="nav-item"><a class="nav-link" href="#markdown-pane" aria-controls="profile" data-bs-toggle="tab">Markdown</a></li>
+      </ul>
+
+      <!-- Tabs replacement titles for big screen -->
+      <div class="title-container d-none d-md-flex justify-content-evenly">
+        <div class="content-title">
+          Editor
+        </div>
+        
+        <div class="content-title">
+          Markdown
+        </div>
+      </div>
+  
+      <!-- Tabs content -->
+      <div class="tab-content row">
+          <div role="tabpanel" class="tab-pane active col col-12 col-md-6" id="editor-pane">
+            <textarea id="editor"># Welcome to my React Markdown Previewer!
+            </textarea>
+          </div>
+          <div role="tabpanel" class="tab-pane col-12 col-md-6" id="markdown-pane">
+            <div id="preview">here comes the markdown
+            </div>
+          </div>
+      </div>
+
+  </div>
+  
+    
+
+
+  </nav>
+</body>
+
+</html>

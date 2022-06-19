@@ -1,0 +1,42 @@
+/* --------------- Responsive Fixes --------------- */
+/* small device */
+
+/*
+@media (max-width: 767px) {
+  .device-big {
+    display: none !important;
+  }
+
+  .device-small {
+    display: block !important;
+  }
+
+  .content-title {
+    display: none !important;
+  }
+}
+*/
+/* big device */
+@media only screen and (min-width : 768px) {
+
+  .device-big,
+  .tab-content>.tab-pane {
+    display: block !important;
+  }
+
+  .device-small {
+    display: none !important;
+  }
+
+  .tab-content>.tab-pane {
+    display: block !important;
+  }
+
+}
+
+/* --------------- / Responsive Fixes --------------- */
+
+textarea{
+  width: 100%;
+  height: 90vh;
+}
