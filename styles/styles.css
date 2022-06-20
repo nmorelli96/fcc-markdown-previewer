@@ -31,7 +31,18 @@
   }
 }
 /* --------------- / Responsive Fixes --------------- */
+div#app.container {
+  max-width: 100% !important;
+}
+
 textarea {
   width: 100%;
   height: 90vh;
+}
+
+#preview {
+  border: solid 1px lightgrey;
+  width: 100%;
+  height: 90vh;
+  overflow-y: auto;
 }/*# sourceMappingURL=styles.css.map */
