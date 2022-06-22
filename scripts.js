@@ -6,9 +6,10 @@ marked.setOptions({
 class App extends React.Component {
   constructor(props) {
     super(props);
-  }
-  state = {
-    text: placeholder
+
+    this.state = {
+      text: placeholder
+    }
   }
 
   handleChange = (event) => {
@@ -18,8 +19,6 @@ class App extends React.Component {
   }
 
   render() {
-    const { text } = this.state;
-    const markdown = marked.parse(text);
     return (
       <div className="container-fluid p-0">
         <nav class="navbar navbar-light top d-flex align-content-center justify-content-center" id="navbar">
@@ -50,12 +49,12 @@ class App extends React.Component {
         <div className="tab-content row align-content-center justify-content-center">
           <div role="tabpanel" className="tab-pane active col col-12 col-xl-6" id="editor-pane">
             <textarea className="form-control" id="editor" onChange={this.handleChange}
-              value={text}># Welcome to my React Markdown Previewer!
+              value={this.state.text}># Welcome to my React Markdown Previewer!
             </textarea>
           </div>
           <div role="tabpanel" className="tab-pane col-12 col-xl-6" id="markdown-pane">
             <div className="preview" id="preview"
-              dangerouslySetInnerHTML={{ __html: markdown }} />
+              dangerouslySetInnerHTML={{ __html: marked.parse(this.state.text) }} />
           </div>
         </div>
         <footer className="footer text-muted d-flex align-content-center justify-content-center">Based on the&nbsp;<a target="_blank"
