@@ -1,21 +1,5 @@
 /* --------------- Responsive Tabs toggle --------------- */
-/* small device */
-/*
-@media (max-width: 767px) {
-  .device-big {
-    display: none !important;
-  }
-
-  .device-small {
-    display: block !important;
-  }
-
-  .content-title {
-    display: none !important;
-  }
-}
-*/
-/* big device */
+/* desktop screen */
 @media only screen and (min-width: 1140px) {
   .device-big,
 .tab-content > .tab-pane {
@@ -100,7 +84,7 @@ body {
   background-color: #ecdabe;
   box-shadow: 0 0 5px rgba(31, 31, 31, 0.4);
   width: 100%;
-  height: 86vh;
+  height: 84vh;
   border: none;
   border-radius: 0;
 }
@@ -108,7 +92,7 @@ body {
   background-color: #ecdabe;
   box-shadow: 0 0 5px rgba(31, 31, 31, 0.4);
   width: 100%;
-  height: 86vh;
+  height: 84vh;
   overflow-y: auto;
   padding: 12px;
   padding-top: 6px;
@@ -163,7 +147,7 @@ body {
   background-color: #CEAB93;
   padding-top: 2px;
   padding-bottom: 2px;
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
 #app footer a {
