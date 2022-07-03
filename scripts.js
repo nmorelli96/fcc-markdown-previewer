@@ -57,10 +57,13 @@ class App extends React.Component {
               dangerouslySetInnerHTML={{ __html: marked.parse(this.state.text) }} />
           </div>
         </div>
-        <footer className="footer text-muted d-flex align-content-center justify-content-center">Based on the&nbsp;<a target="_blank"
+        <footer className="footer w-100 text-muted d-flex align-content-center justify-content-center">Based on the&nbsp;<a target="_blank"
           href="https://www.freecodecamp.org/learn/front-end-development-libraries/">
-          FCC course</a>&nbsp;by&nbsp; <a target="_blank"
-            href="https://github.com/nmorelli96/fcc-markdown-previewer">nmorelli96</a></footer>
+          FCC course</a>&nbsp;by&nbsp; <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/nmorelli96/"
+        >nmorelli96</a></footer>
       </div >
     );
   }
